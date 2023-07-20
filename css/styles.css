@@ -214,3 +214,7 @@ button:focus,
 .cloud-back {
   animation: 50s cloud-move-reverse infinite alternate linear;
 }
+
+.profile__image {
+  border-radius: 30px;
+}
