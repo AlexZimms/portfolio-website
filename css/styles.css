@@ -1,4 +1,4 @@
-body {
+html, body {
   font-family: 'Belanosima', sans-serif;
   font-weight: 400;
   font-style: unset;
@@ -12,9 +12,12 @@ body {
   width: 100%;
   padding: 20px;
 }
+
 a {
   color: var(--primary-color);
 }
+
+
 :root {
   --primary-color: #357b70;
   --secondary-color: #e0b354;
@@ -23,12 +26,13 @@ a {
   --visited-link: #6d1894;
   --hover-focus: brown;
   --hover-active: #489c79;
-  --buttonBG:#357b70;
+  --buttonBG: #357b70;
   --buttonColor: white;
   --sunStart: #edc655;
   --sunEnd: #f76414;
   --button-border-bottom: #000;
-} 
+}
+
 .page-header__item:last-child {
   flex-grow: 1;
   text-align: right;
@@ -45,7 +49,7 @@ a {
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
 }
 
@@ -137,7 +141,7 @@ button:focus,
 
 @media all and (max-width: 500px) {
   .grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -149,7 +153,8 @@ button:focus,
 
 @media all and (max-width: 750px) {
   .grid {
-    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 50px;
   }
 
   .grid__item:last-child {
@@ -215,6 +220,3 @@ button:focus,
   animation: 50s cloud-move-reverse infinite alternate linear;
 }
 
-.profile__image {
-  border-radius: 30px;
-}

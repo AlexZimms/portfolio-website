@@ -112,7 +112,7 @@ body {
     /* takes the font from the outer container */
     font-family: inherit;
     /* styles the button */
-    background-color: undefined;
+    background-color: blue;
     color: white;
     text-decoration: none;
     padding: 10px;
@@ -132,7 +132,7 @@ body {
     /* takes the font from the outer container */
     font-family: inherit;
     /* styles the button */
-    background-color: undefined;
+    background-color: blue;
     color: white;
     text-decoration: none;
     padding: 10px;
@@ -180,9 +180,10 @@ body {
     }
   }
   
-  @media all and (max-width: 750px) {
+  @media all and (min-width: 750px) {
     .grid {
       grid-gap: 10px;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
     }
   
     .grid__item:last-child {
@@ -289,4 +290,8 @@ body {
   .cloud-back {
     -webkit-animation: 50s cloud-move-reverse infinite alternate linear;
             animation: 50s cloud-move-reverse infinite alternate linear;
+  }
+  .social__icon {
+    font-size: 30px;
+    width: 30px;
   }
